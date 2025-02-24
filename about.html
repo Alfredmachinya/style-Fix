@@ -1,54 +1,139 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About Me</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Style Fix Clothing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: transparent;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        nav a {
+            color: #333;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding-bottom: 5px;
+            position: relative;
+        }
+        nav a:hover,
+        nav a.active {
+            color: #ff6347;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff6347;
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+        .search-bar {
+            margin-left: 20px;
+        }
+        .search-bar input {
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+        .search-bar input:focus {
+            border-color: #ff6347; /* Orange border on focus */
+            outline: none;
+        }
+        main {
+            padding: 80px 20px 20px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .content img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
-
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html" class="active">About</a> |
+            <a href="service.html">Services</a> |
+            <a href="order.html">Order</a> |
+            <a href="contact.html">Contact</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
 
-<header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <div class="content">
+                <img src="team.jpg" alt="Our Team">
+                <p>Welcome to <strong>Style Fix Clothing</strong>! We are passionate about providing stylish and comfortable clothing to our customers. Our journey began with a simple idea: to create a clothing brand that prioritizes quality, comfort, and style.</p>
+                
+                <p>At Style Fix Clothing, we believe that fashion should be accessible to everyone. That's why we offer a wide range of products that cater to different styles and preferences. Whether you're looking for casual wear, work attire, or something for a special occasion, we've got you covered.</p>
+                
+                <img src="materials.jpg" alt="Quality Materials">
+                <p>Our team is dedicated to ensuring that each piece of clothing meets our high standards. From the selection of materials to the final product, we pay attention to every detail to ensure that you receive the best quality clothing.</p>
+                
+                <p>We are committed to sustainability and ethical practices. We work closely with our suppliers to ensure that our products are made in a way that respects both people and the planet.</p>
+                
+                <img src="sustainability.jpg" alt="Sustainability">
+                <p>Thank you for choosing Style Fix Clothing. We hope you enjoy our products as much as we enjoy creating them for you!</p>
+            </div>
+        </section>
+    </main>
 
-
-<nav>
-
-<a href="index.html">Home</a> |
-
-<a href="about.html">About</a> |
-
-<a href="service.html">Services</a> |
-
-<a href="order.html">Order</a> |
-
-<a href="contact.html">Contact</a>
-
-</nav>
-
-</header>
-
-
-<main>
-
-<p>Welcome to Style Fix Clothing, where fashion meets passion. We believe in creating clothing that not only looks good but feels good. Our collections are crafted with love, attention to detail, and a commitment to quality. Join us on our journey to redefine style and comfort, one outfit at a time.</p>
-
-
-
-</main>
-
-
-<footer>
-
-<p>&copy; 2024 Style Fix Clothing</p>
-
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Style Fix Clothing</p>
+    </footer>
 </body>
-
 </html>
+
