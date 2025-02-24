@@ -32,12 +32,12 @@
             color: #333;
         }
         .product {
-            display: flex;
             flex-wrap: wrap;
         }
         .product img {
             max-width: 100%;
             height: auto;
+            border-radius: 10px;
         }
         .product-item {
             flex: 1 1 30%;
@@ -45,13 +45,20 @@
             background-color: #fff;
             padding: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: relative;
             width: 100%;
             bottom: 0;
         }
@@ -80,27 +87,32 @@
                 <div class="product-item">
                     <img src="faith.fear.hoodie.jpg" alt="Hoodies">
                     <h3>Hoodies</h3>
-                   
+                  
                 </div>
                 <div class="product-item">
                     <img src="walk.tshirt.jpg" alt="T-Shirts">
                     <h3>T-Shirts</h3>
-                 </div>
+                 
+                </div>
                 <div class="product-item">
                     <img src="plsalms91.sweater.jpg" alt="Sweaters">
                     <h3>Sweaters</h3>
+                   
                 </div>
-                 <div class="product-item">
+                <div class="product-item">
                     <img src="bestill.cap.jpg" alt="Caps">
-                    <h3>caps</h3>
+                    <h3>Caps</h3>
+                  
                 </div>
-                 <div class="product-item">
+                <div class="product-item">
                     <img src="jesus.buckethead.jpg" alt="Bucket-Hats">
                     <h3>Bucket-Hats</h3>
+                   
                 </div>
-                 <div class="product-item">
+                <div class="product-item">
                     <img src="faith.cushion.jpg" alt="Cushion">
                     <h3>Cushion</h3>
+                 
                 </div>
             </div>
         </section>
@@ -116,6 +128,3 @@
     </footer>
 </body>
 </html>
-```
-
-This version includes the item names, images, and descriptions without the prices. Let me know if there's anything else you'd like to adjust!
