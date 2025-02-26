@@ -77,14 +77,23 @@
         .content {
             max-width: 800px;
             margin: 0 auto;
-            text-align: left;
         }
-        .content img {
+        .content p {
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .row img {
             width: 40%;
             border-radius: 10px;
-            margin-bottom: 20px;
-            float: left;
             margin-right: 20px;
+        }
+        .row div {
+            text-align: left;
+            flex: 1;
         }
         footer {
             background-color: #333;
@@ -117,20 +126,26 @@
         <section>
             <h2>About Us</h2>
             <div class="content">
-                <p style="text-align: center;">Welcome to <strong>Style Fix Clothing</strong>! We are passionate about providing stylish and comfortable clothing to our customers. Our journey began with a simple idea: to create a clothing brand that prioritizes quality, comfort, and style.</p>
-                <div>
+                <p>Welcome to <strong>Style Fix Clothing</strong>! We are passionate about providing stylish and comfortable clothing to our customers. Our journey began with a simple idea: to create a clothing brand that prioritizes quality, comfort, and style.</p>
+                <div class="row">
                     <img src="walk.tshirt.jpg" alt="Quality Materials">
-                    <p>At Style Fix Clothing, we believe that fashion should be accessible to everyone. That's why we offer a wide range of products that cater to different styles and preferences. Whether you're looking for casual wear, work attire, or something for a special occasion, we've got you covered.</p>
+                    <div>
+                        <p>At Style Fix Clothing, we believe that fashion should be accessible to everyone. That's why we offer a wide range of products that cater to different styles and preferences. Whether you're looking for casual wear, work attire, or something for a special occasion, we've got you covered.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="row">
                     <img src="faith.pouch.jpg" alt="Our Team">
-                    <p>Our team is dedicated to ensuring that each piece of clothing meets our high standards. From the selection of materials to the final product, we pay attention to every detail to ensure that you receive the best quality clothing.</p>
+                    <div>
+                        <p>Our team is dedicated to ensuring that each piece of clothing meets our high standards. From the selection of materials to the final product, we pay attention to every detail to ensure that you receive the best quality clothing.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="row">
                     <img src="bestill.cap.jpg" alt="Sustainability">
-                    <p>We are committed to sustainability and ethical practices. We work closely with our suppliers to ensure that our products are made in a way that respects both people and the planet.</p>
+                    <div>
+                        <p>We are committed to sustainability and ethical practices. We work closely with our suppliers to ensure that our products are made in a way that respects both people and the planet.</p>
+                    </div>
                 </div>
-                <p style="text-align: center;">Thank you for choosing Style Fix Clothing. We hope you enjoy our products as much as we enjoy creating them for you!</p>
+                <p>Thank you for choosing Style Fix Clothing. We hope you enjoy our products as much as we enjoy creating them for you!</p>
             </div>
         </section>
     </main>
